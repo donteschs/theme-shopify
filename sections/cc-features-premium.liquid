@@ -1,0 +1,291 @@
+{% doc %}
+  CubeCraft Premium Features Grid
+  Dark or light section with animated feature cards
+{% enddoc %}
+
+<style>
+  .cc-features {
+    padding: 96px 0;
+  }
+
+  @media (max-width: 768px) {
+    .cc-features { padding: 64px 0; }
+  }
+
+  .cc-features__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  @media (max-width: 768px) {
+    .cc-features__inner { padding: 0 24px; }
+  }
+
+  .cc-features__header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 64px;
+  }
+
+  .cc-features__eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #22C55E;
+    margin-bottom: 16px;
+  }
+
+  .cc-features__title {
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin: 0 0 20px;
+    color: var(--color-foreground-heading);
+    font-family: var(--cc-font-premium, inherit);
+  }
+
+  .cc-features__subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color-foreground);
+    opacity: 0.7;
+    margin: 0;
+  }
+
+  .cc-features__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  @media (max-width: 900px) {
+    .cc-features__grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 580px) {
+    .cc-features__grid { grid-template-columns: 1fr; }
+  }
+
+  .cc-feature-item {
+    padding: 36px 32px;
+    border-radius: 16px;
+    border: 1px solid var(--color-border);
+    background: var(--color-background);
+    transition: transform 0.28s cubic-bezier(0.34, 1.2, 0.64, 1),
+                box-shadow 0.28s ease,
+                border-color 0.28s ease;
+    cursor: default;
+  }
+
+  .cc-feature-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.12);
+    border-color: #22C55E;
+  }
+
+  .cc-feature-item__icon-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(34, 197, 94, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 26px;
+    transition: background 0.25s ease, transform 0.25s ease;
+  }
+
+  .cc-feature-item:hover .cc-feature-item__icon-wrap {
+    background: rgba(34, 197, 94, 0.2);
+    transform: scale(1.1);
+  }
+
+  .cc-feature-item__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-foreground-heading);
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+    font-family: var(--cc-font-premium, inherit);
+  }
+
+  .cc-feature-item__text {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--color-foreground);
+    opacity: 0.72;
+    margin: 0;
+  }
+
+  .cc-feature-item__tag {
+    display: inline-flex;
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #22C55E;
+    letter-spacing: 0.04em;
+  }
+</style>
+
+<section class="cc-features color-{{ section.settings.color_scheme }}">
+  <div class="cc-features__inner">
+    <div class="cc-features__header" data-cc-animate>
+      {% if section.settings.eyebrow != blank %}
+        <span class="cc-features__eyebrow">{{ section.settings.eyebrow }}</span>
+      {% endif %}
+      <h2 class="cc-features__title">{{ section.settings.title }}</h2>
+      {% if section.settings.subtitle != blank %}
+        <p class="cc-features__subtitle">{{ section.settings.subtitle }}</p>
+      {% endif %}
+    </div>
+
+    <div class="cc-features__grid">
+      {% for block in section.blocks %}
+        <div class="cc-feature-item" data-cc-animate data-delay="{{ forloop.index }}" {{ block.shopify_attributes }}>
+          {% if block.settings.icon != blank %}
+            <div class="cc-feature-item__icon-wrap">{{ block.settings.icon }}</div>
+          {% endif %}
+          <h3 class="cc-feature-item__title">{{ block.settings.title }}</h3>
+          {% if block.settings.text != blank %}
+            <p class="cc-feature-item__text">{{ block.settings.text }}</p>
+          {% endif %}
+          {% if block.settings.tag != blank %}
+            <span class="cc-feature-item__tag">→ {{ block.settings.tag }}</span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Features Premium",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow label",
+      "default": "Pourquoi CubeCraft"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Tout ce dont ton enfant a besoin pour créer"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Un kit pensé pour stimuler la créativité, développer la concentration et s'éloigner des écrans."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon (emoji or SVG)",
+          "default": "🎨"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "100% créatif"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "Des matériaux de qualité professionnelle pour libérer l'imagination de ton enfant."
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag",
+          "default": "Sans écran"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Features Premium",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "🎨",
+            "title": "100% créatif",
+            "text": "Des matériaux de qualité professionnelle pour libérer l'imagination de ton enfant.",
+            "tag": "Sans écran"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "🧠",
+            "title": "Stimule le cerveau",
+            "text": "Construire, assembler, créer — des activités qui développent la motricité et la concentration.",
+            "tag": "Certifié pédagogique"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "👨‍👩‍👧",
+            "title": "En famille",
+            "text": "Des moments de qualité partagés. Des souvenirs qui durent. Une vraie expérience ensemble.",
+            "tag": "Dès 6 ans"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "♻️",
+            "title": "Éco-responsable",
+            "text": "Matériaux durables, emballages recyclables. Bon pour tes enfants, bon pour la planète.",
+            "tag": "100% recyclable"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "🎁",
+            "title": "Cadeau parfait",
+            "text": "Livraison en 48h, emballage cadeau offert. Le présent qui fait la différence.",
+            "tag": "Livraison rapide"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "🏆",
+            "title": "Garanti 30 jours",
+            "text": "Pas convaincu ? On vous rembourse intégralement. Sans question, sans délai.",
+            "tag": "Satisfait ou remboursé"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

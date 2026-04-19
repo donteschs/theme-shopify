@@ -1,0 +1,172 @@
+{% doc %}
+  CubeCraft Premium Stats / Social Proof Section
+{% enddoc %}
+
+<style>
+  .cc-stats-section {
+    padding: 80px 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .cc-stats-section__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+    text-align: center;
+  }
+
+  @media (max-width: 900px) {
+    .cc-stats-section__inner { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  }
+
+  @media (max-width: 480px) {
+    .cc-stats-section__inner { grid-template-columns: 1fr; gap: 32px; }
+    .cc-stats-section { padding: 56px 0; }
+  }
+
+  @media (max-width: 768px) {
+    .cc-stats-section__inner { padding: 0 24px; }
+  }
+
+  .cc-stat-item {}
+
+  .cc-stat-item__number {
+    font-size: clamp(36px, 4.5vw, 60px);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: #22C55E;
+    margin-bottom: 8px;
+    font-family: var(--cc-font-premium, inherit);
+    display: block;
+  }
+
+  .cc-stat-item__label {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-foreground);
+    opacity: 0.65;
+    line-height: 1.4;
+  }
+
+  .cc-stat-item__divider {
+    width: 32px;
+    height: 3px;
+    background: #22C55E;
+    border-radius: 2px;
+    margin: 12px auto;
+  }
+</style>
+
+<section class="cc-stats-section color-{{ section.settings.color_scheme }}">
+  <div class="cc-stats-section__inner">
+    {% for block in section.blocks %}
+      <div class="cc-stat-item" data-cc-animate data-delay="{{ forloop.index }}" {{ block.shopify_attributes }}>
+        <span
+          class="cc-stat-item__number"
+          {% if block.settings.animate_number %}
+            data-cc-counter="{{ block.settings.number_raw }}"
+          {% endif %}
+        >
+          {{ block.settings.number }}
+        </span>
+        <div class="cc-stat-item__divider"></div>
+        <p class="cc-stat-item__label">{{ block.settings.label }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Stats Premium",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Displayed number",
+          "default": "2 847"
+        },
+        {
+          "type": "text",
+          "id": "number_raw",
+          "label": "Raw number (for animation)",
+          "default": "2847"
+        },
+        {
+          "type": "checkbox",
+          "id": "animate_number",
+          "label": "Animate count-up",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "familles satisfaites"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stats Premium",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": {
+            "number": "2 847",
+            "number_raw": "2847",
+            "label": "Familles satisfaites"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "4.9/5",
+            "number_raw": "0",
+            "animate_number": false,
+            "label": "Note moyenne"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "30j",
+            "number_raw": "0",
+            "animate_number": false,
+            "label": "Garantie satisfait ou remboursé"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "48h",
+            "number_raw": "0",
+            "animate_number": false,
+            "label": "Livraison express offerte"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

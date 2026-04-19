@@ -1,0 +1,242 @@
+{% doc %}
+  CubeCraft Premium Full-Width CTA Section
+  Dark background with green radial glow, amber CTA button
+{% enddoc %}
+
+<style>
+  .cc-cta-premium {
+    position: relative;
+    background: #0A0A0A;
+    overflow: hidden;
+    padding: 120px 0;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .cc-cta-premium { padding: 80px 0; }
+  }
+
+  .cc-cta-premium__glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(34, 197, 94, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cc-cta-premium__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  @media (max-width: 768px) {
+    .cc-cta-premium__inner { padding: 0 24px; }
+  }
+
+  .cc-cta-premium__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(250, 204, 21, 0.12);
+    border: 1px solid rgba(250, 204, 21, 0.3);
+    color: #FACC15;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 100px;
+    margin-bottom: 32px;
+  }
+
+  .cc-cta-premium__title {
+    font-size: clamp(32px, 5vw, 64px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    color: #FFFFFF;
+    margin: 0 0 24px;
+    font-family: var(--cc-font-premium, inherit);
+  }
+
+  .cc-cta-premium__title .green {
+    color: #22C55E;
+  }
+
+  .cc-cta-premium__subtitle {
+    font-size: clamp(15px, 2vw, 19px);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0 0 48px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cc-cta-premium__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .cc-cta-premium__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #FACC15;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.22s ease,
+                background-color 0.22s ease;
+  }
+
+  .cc-cta-premium__btn:hover {
+    background: #F59E0B;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 16px 40px rgba(250, 204, 21, 0.45);
+    color: #000000;
+  }
+
+  .cc-cta-premium__guarantee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.45);
+  }
+
+  .cc-cta-premium__guarantee svg {
+    color: #22C55E;
+  }
+
+  .cc-cta-premium__stock {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #4ADE80;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .cc-cta-premium__stock::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #22C55E;
+    border-radius: 50%;
+    animation: ccPulse 2s ease infinite;
+  }
+</style>
+
+<section class="cc-cta-premium" id="cc-cta-{{ section.id }}">
+  <div class="cc-cta-premium__glow"></div>
+
+  <div class="cc-cta-premium__inner">
+    {% if section.settings.eyebrow != blank %}
+      <div class="cc-cta-premium__eyebrow" data-cc-animate>
+        {{ section.settings.eyebrow }}
+      </div>
+    {% endif %}
+
+    <h2 class="cc-cta-premium__title" data-cc-animate data-delay="1">
+      {{ section.settings.title }}
+    </h2>
+
+    {% if section.settings.subtitle != blank %}
+      <p class="cc-cta-premium__subtitle" data-cc-animate data-delay="2">
+        {{ section.settings.subtitle }}
+      </p>
+    {% endif %}
+
+    {% if section.settings.stock_text != blank %}
+      <div class="cc-cta-premium__stock" data-cc-animate data-delay="2">
+        {{ section.settings.stock_text }}
+      </div>
+    {% endif %}
+
+    <div class="cc-cta-premium__actions" data-cc-animate data-delay="3">
+      {% if section.settings.cta_text != blank %}
+        <a href="{{ section.settings.cta_url }}" class="cc-cta-premium__btn">
+          {{ section.settings.cta_text }}
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      {% endif %}
+
+      {% if section.settings.guarantee_text != blank %}
+        <div class="cc-cta-premium__guarantee">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          {{ section.settings.guarantee_text }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "CTA Premium",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Dernière chance"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "<p>Votre enfant mérite<br>mieux que les <span class=\"green\">écrans.</span></p>"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Rejoignez 2 847 familles qui ont choisi CubeCraft. Offre de lancement à -30% pendant encore quelques heures."
+    },
+    {
+      "type": "text",
+      "id": "stock_text",
+      "label": "Stock text",
+      "default": "127 familles peuvent encore profiter de l'offre"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA text",
+      "default": "Je commande maintenant →"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA URL"
+    },
+    {
+      "type": "text",
+      "id": "guarantee_text",
+      "label": "Guarantee text",
+      "default": "Garantie 30 jours satisfait ou remboursé · Livraison 48h offerte"
+    }
+  ],
+  "presets": [
+    {
+      "name": "CTA Premium"
+    }
+  ]
+}
+{% endschema %}

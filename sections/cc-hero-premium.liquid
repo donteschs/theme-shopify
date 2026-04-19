@@ -1,0 +1,477 @@
+{% doc %}
+  CubeCraft Premium Hero Section
+  Dark background, lime green accent, bold headline, animated CTA
+{% enddoc %}
+
+<style>
+  .cc-hero-premium {
+    position: relative;
+    background: {{ section.settings.background_color }};
+    color: #FFFFFF;
+    overflow: hidden;
+    padding: 120px 0 96px;
+    min-height: {{ section.settings.min_height }}px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .cc-hero-premium { padding: 80px 0 64px; min-height: auto; }
+  }
+
+  .cc-hero-premium__bg-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .cc-hero-premium__bg-blob--1 {
+    background: rgba(34, 197, 94, 0.18);
+    width: 700px; height: 700px;
+    top: -200px; right: -150px;
+  }
+
+  .cc-hero-premium__bg-blob--2 {
+    background: rgba(250, 204, 21, 0.1);
+    width: 500px; height: 500px;
+    bottom: -200px; left: -100px;
+  }
+
+  .cc-hero-premium__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  @media (max-width: 900px) {
+    .cc-hero-premium__inner {
+      grid-template-columns: 1fr;
+      gap: 48px;
+      padding: 0 24px;
+    }
+    .cc-hero-premium__media { order: -1; }
+  }
+
+  .cc-hero-premium__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    color: #4ADE80;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+  }
+
+  .cc-hero-premium__badge::before {
+    content: '';
+    width: 8px; height: 8px;
+    background: #22C55E;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);
+    animation: ccPulse 2s ease infinite;
+  }
+
+  .cc-hero-premium__headline {
+    font-size: clamp(40px, 5.5vw, 80px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    margin: 0 0 24px;
+    font-family: var(--cc-font-premium, inherit);
+  }
+
+  .cc-hero-premium__headline .green {
+    color: #22C55E;
+  }
+
+  .cc-hero-premium__headline .amber {
+    color: #FACC15;
+  }
+
+  .cc-hero-premium__sub {
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 40px;
+    max-width: 520px;
+  }
+
+  .cc-hero-premium__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .cc-hero-premium__btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #22C55E;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.2s ease,
+                background-color 0.2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cc-hero-premium__btn-primary:hover {
+    background: #16A34A;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(34, 197, 94, 0.4);
+    color: #000000;
+  }
+
+  .cc-hero-premium__btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+
+  .cc-hero-premium__btn-secondary:hover {
+    border-color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.07);
+    color: #FFFFFF;
+  }
+
+  .cc-hero-premium__social-proof {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .cc-hero-premium__avatars {
+    display: flex;
+  }
+
+  .cc-hero-premium__avatars img,
+  .cc-hero-premium__avatar-placeholder {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 2px solid #0A0A0A;
+    margin-left: -10px;
+  }
+
+  .cc-hero-premium__avatars img:first-child,
+  .cc-hero-premium__avatar-placeholder:first-child {
+    margin-left: 0;
+  }
+
+  .cc-hero-premium__avatar-placeholder {
+    background: linear-gradient(135deg, #22C55E, #16A34A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  .cc-hero-premium__proof-text {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.4;
+  }
+
+  .cc-hero-premium__proof-text strong {
+    color: #FFFFFF;
+  }
+
+  .cc-hero-premium__stars {
+    color: #FACC15;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .cc-hero-premium__media {
+    position: relative;
+  }
+
+  .cc-hero-premium__image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 48px 96px rgba(0, 0, 0, 0.5);
+    transform: perspective(1000px) rotateY(-4deg) rotateX(2deg);
+    transition: transform 0.6s ease;
+  }
+
+  .cc-hero-premium__media:hover .cc-hero-premium__image {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+  }
+
+  .cc-hero-premium__badge-float {
+    position: absolute;
+    background: #FACC15;
+    color: #000000;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 10px 18px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(250, 204, 21, 0.4);
+    animation: ccFloatBadge 3s ease-in-out infinite;
+  }
+
+  .cc-hero-premium__badge-float--1 {
+    top: -20px;
+    left: -20px;
+  }
+
+  .cc-hero-premium__badge-float--2 {
+    bottom: 30px;
+    right: -20px;
+  }
+
+  @keyframes ccFloatBadge {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .cc-hero-premium__urgency {
+    background: rgba(250, 204, 21, 0.12);
+    border: 1px solid rgba(250, 204, 21, 0.3);
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-top: 32px;
+    font-size: 14px;
+    color: #FACC15;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 460px;
+  }
+
+  .cc-hero-premium__urgency svg {
+    flex-shrink: 0;
+  }
+</style>
+
+<section class="cc-hero-premium" id="cc-hero-{{ section.id }}">
+  <div class="cc-hero-premium__bg-blob cc-hero-premium__bg-blob--1"></div>
+  <div class="cc-hero-premium__bg-blob cc-hero-premium__bg-blob--2"></div>
+
+  <div class="cc-hero-premium__inner">
+    <div class="cc-hero-premium__content" data-cc-animate>
+      {% if section.settings.badge != blank %}
+        <div class="cc-hero-premium__badge">{{ section.settings.badge }}</div>
+      {% endif %}
+
+      <h1 class="cc-hero-premium__headline">
+        {{ section.settings.headline }}
+      </h1>
+
+      {% if section.settings.subheadline != blank %}
+        <p class="cc-hero-premium__sub" data-cc-animate data-delay="1">
+          {{ section.settings.subheadline }}
+        </p>
+      {% endif %}
+
+      <div class="cc-hero-premium__actions" data-cc-animate data-delay="2">
+        {% if section.settings.cta_primary_text != blank %}
+          <a href="{{ section.settings.cta_primary_url }}" class="cc-hero-premium__btn-primary">
+            {{ section.settings.cta_primary_text }}
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        {% endif %}
+        {% if section.settings.cta_secondary_text != blank %}
+          <a href="{{ section.settings.cta_secondary_url }}" class="cc-hero-premium__btn-secondary">
+            {{ section.settings.cta_secondary_text }}
+          </a>
+        {% endif %}
+      </div>
+
+      {% if section.settings.urgency_text != blank %}
+        <div class="cc-hero-premium__urgency" data-cc-animate data-delay="3">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          {{ section.settings.urgency_text }}
+        </div>
+      {% endif %}
+
+      {% if section.settings.show_social_proof %}
+        <div class="cc-hero-premium__social-proof" data-cc-animate data-delay="4">
+          <div class="cc-hero-premium__avatars">
+            <div class="cc-hero-premium__avatar-placeholder">A</div>
+            <div class="cc-hero-premium__avatar-placeholder">B</div>
+            <div class="cc-hero-premium__avatar-placeholder">C</div>
+            <div class="cc-hero-premium__avatar-placeholder">+</div>
+          </div>
+          <div>
+            <div class="cc-hero-premium__stars">★★★★★</div>
+            <div class="cc-hero-premium__proof-text">
+              <strong>{{ section.settings.social_proof_count }}</strong> {{ section.settings.social_proof_text }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    {% if section.settings.image != blank %}
+      <div class="cc-hero-premium__media" data-cc-animate data-delay="2">
+        {% if section.settings.badge_float_1 != blank %}
+          <div class="cc-hero-premium__badge-float cc-hero-premium__badge-float--1">
+            {{ section.settings.badge_float_1 }}
+          </div>
+        {% endif %}
+        <div class="cc-hero-premium__image">
+          {% render 'image',
+            image: section.settings.image,
+            width: 800,
+            loading: 'eager',
+            fetchpriority: 'high'
+          %}
+        </div>
+        {% if section.settings.badge_float_2 != blank %}
+          <div class="cc-hero-premium__badge-float cc-hero-premium__badge-float--2">
+            {{ section.settings.badge_float_2 }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero Premium",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "min_height",
+      "label": "Min height (px)",
+      "min": 400,
+      "max": 900,
+      "step": 20,
+      "default": 700
+    },
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge label",
+      "default": "Nouveau · Édition limitée"
+    },
+    {
+      "type": "richtext",
+      "id": "headline",
+      "label": "Headline",
+      "default": "<p>Construis ton <span class=\"green\">monde.</span><br>Pour de <span class=\"amber\">vrai.</span></p>"
+    },
+    {
+      "type": "textarea",
+      "id": "subheadline",
+      "label": "Subheadline",
+      "default": "Le kit créatif qui transforme les heures d'écran en heures de création. Certifié par 2 847 familles."
+    },
+    {
+      "type": "text",
+      "id": "cta_primary_text",
+      "label": "Primary CTA text",
+      "default": "Je veux le kit"
+    },
+    {
+      "type": "url",
+      "id": "cta_primary_url",
+      "label": "Primary CTA URL"
+    },
+    {
+      "type": "text",
+      "id": "cta_secondary_text",
+      "label": "Secondary CTA text",
+      "default": "Voir comment ça marche"
+    },
+    {
+      "type": "url",
+      "id": "cta_secondary_url",
+      "label": "Secondary CTA URL"
+    },
+    {
+      "type": "text",
+      "id": "urgency_text",
+      "label": "Urgency text",
+      "default": "⚡ Plus que 127 unités à ce prix — offre de lancement à -30%"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_proof",
+      "label": "Show social proof",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "social_proof_count",
+      "label": "Social proof count",
+      "default": "2 847 familles"
+    },
+    {
+      "type": "text",
+      "id": "social_proof_text",
+      "label": "Social proof text",
+      "default": "nous font confiance · Note 4.9/5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hero image"
+    },
+    {
+      "type": "text",
+      "id": "badge_float_1",
+      "label": "Floating badge 1",
+      "default": "🎨 100% créatif"
+    },
+    {
+      "type": "text",
+      "id": "badge_float_2",
+      "label": "Floating badge 2",
+      "default": "✅ Garanti 30 jours"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Premium"
+    }
+  ]
+}
+{% endschema %}
