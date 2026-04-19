@@ -1,1 +1,495 @@
-{"sections":{"hero_jVaWmY":{"type":"hero","blocks":{"text_badge":{"type":"text","name":"Badge","settings":{"text":"<p>⚡ Offre de lancement · -30% · 127 unités restantes</p>","width":"fit-content","max_width":"normal","alignment":"left","type_preset":"rte","font":"var(--font-body--family)","font_size":"0.8125rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","color":"#FACC15","background":true,"background_color":"rgba(250,204,21,0.12)","corner_radius":100,"padding-block-start":6,"padding-block-end":6,"padding-inline-start":14,"padding-inline-end":14},"blocks":{}},"text_headline":{"type":"text","name":"Headline","settings":{"text":"<h1>Ils adorent Minecraft\u00a0?\u003cbr\u003eOffrez-leur le vrai monde\u003cbr\u003edans les mains.</h1>","width":"fit-content","max_width":"normal","alignment":"left","type_preset":"rte","font":"var(--cc-font-premium, var(--font-primary--family))","font_size":"1rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","color":"#FFFFFF","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":16,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"text_sub":{"type":"text","name":"Subheadline","settings":{"text":"<p>Le kit cr\u00e9atif qui transforme les heures d\u2019\u00e9cran en heures de cr\u00e9ation. Certifi\u00e9 par 2\u00a0847 familles.</p>","width":"fit-content","max_width":"540px","alignment":"left","type_preset":"rte","font":"var(--font-body--family)","font_size":"1.125rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","color":"rgba(255,255,255,0.72)","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":16,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"button_primary":{"type":"button","name":"CTA Principal","settings":{"label":"Je veux le kit \u2192","link":"shopify:\/\/collections\/all","open_in_new_tab":false,"style_class":"button","width":"fit-content","custom_width":100,"width_mobile":"fit-content","custom_width_mobile":100},"blocks":{}},"button_secondary":{"type":"button","name":"CTA Secondaire","settings":{"label":"Comment \u00e7a marche ?","link":"#cc-features","open_in_new_tab":false,"style_class":"button-secondary","width":"fit-content","custom_width":100,"width_mobile":"fit-content","custom_width_mobile":100},"blocks":{}}},"block_order":["text_badge","text_headline","text_sub","button_primary","button_secondary"],"name":"Hero Principal","settings":{"media_type_1":"image","image_1":"shopify:\/\/shop_images\/Whisk_92202c68c92e25abbe649526b03243acdr_f26920d4-4444-4392-b1c4-78dff3edc6f0.png","media_type_2":"image","stack_media_on_mobile":false,"custom_mobile_media":true,"media_type_1_mobile":"image","image_1_mobile":"shopify:\/\/shop_images\/Whisk_4416eb927c0020d8a5046ad544d19c74dr.png","media_type_2_mobile":"image","link":"","open_in_new_tab":false,"content_direction":"column","vertical_on_mobile":true,"horizontal_alignment":"flex-start","vertical_alignment":"flex-end","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"flex-end","gap":20,"section_width":"full-width","section_height":"large","section_height_custom":80,"color_scheme":"scheme-4","toggle_overlay":true,"overlay_color":"rgba(10,10,10,0.55)","overlay_style":"gradient","gradient_direction":"to right","blurred_reflection":false,"reflection_opacity":75,"padding-block-start":120,"padding-block-end":80}},"section_stats":{"type":"cc-stats-premium","blocks":{"stat_1":{"type":"stat","settings":{"number":"2\u00a0847","number_raw":"2847","animate_number":true,"label":"Familles satisfaites"}},"stat_2":{"type":"stat","settings":{"number":"4.9\/5","number_raw":"0","animate_number":false,"label":"Note moyenne clients"}},"stat_3":{"type":"stat","settings":{"number":"30j","number_raw":"0","animate_number":false,"label":"Garantie satisfait ou rembours\u00e9"}},"stat_4":{"type":"stat","settings":{"number":"48h","number_raw":"0","animate_number":false,"label":"Livraison express offerte"}}},"block_order":["stat_1","stat_2","stat_3","stat_4"],"name":"Stats","settings":{"color_scheme":"scheme-2"}},"section_problem":{"type":"section","blocks":{"image_prod":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Whisk_4f8df5f9260d81496f0406e53e7c984adr.png","link":"","image_ratio":"square","width":"fill","custom_width":100,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","border":"none","border_width":1,"border_opacity":100,"border_radius":16,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"group_content":{"type":"group","settings":{"content_direction":"column","vertical_on_mobile":true,"horizontal_alignment":"flex-start","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":24,"width":"custom","custom_width":50,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","custom_height":100,"inherit_color_scheme":true,"color_scheme":"","background_media":"none","video_position":"cover","background_image_position":"cover","border":"none","border_width":1,"border_opacity":100,"border_radius":0,"toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","link":"","open_in_new_tab":false,"placeholder":"","padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{"eyebrow":{"type":"text","name":"Eyebrow","settings":{"text":"<p>LE VRAI PROBL\u00c8ME</p>","width":"fit-content","max_width":"normal","alignment":"left","type_preset":"rte","font":"var(--font-body--family)","font_size":"0.75rem","line_height":"normal","letter_spacing":"0.1em","case":"uppercase","wrap":"pretty","color":"#22C55E","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"headline":{"type":"text","name":"Titre","settings":{"text":"<h2>Votre enfant passe combien d\u2019heures <em>par jour</em> sur un \u00e9cran\u00a0?</h2>","width":"100%","max_width":"normal","alignment":"left","type_preset":"rte","font":"var(--cc-font-premium, var(--font-primary--family))","font_size":"1rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","color":"var(--color-foreground-heading)","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":8,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"body":{"type":"text","name":"Texte","settings":{"text":"<p>En France, les enfants de 8\u201312 ans passent en moyenne <strong>4h30 par jour</strong> devant les \u00e9crans. CubeCraft est n\u00e9 pour changer \u00e7a \u2014 avec des activit\u00e9s cr\u00e9atives qui captivent autant que les jeux vid\u00e9o.</p>","width":"100%","max_width":"normal","alignment":"left","type_preset":"rte","font":"var(--font-body--family)","font_size":"1.0625rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","color":"var(--color-foreground)","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"cta":{"type":"button","name":"CTA","settings":{"label":"D\u00e9couvrir la solution \u2192","link":"shopify:\/\/collections\/all","open_in_new_tab":false,"style_class":"button","width":"fit-content","custom_width":100,"width_mobile":"fit-content","custom_width_mobile":100},"blocks":{}}},"block_order":["eyebrow","headline","body","cta"]}},"block_order":["image_prod","group_content"],"name":"Probl\u00e8me \u2013 Temps \u00e9cran","settings":{"content_direction":"row","vertical_on_mobile":true,"horizontal_alignment":"flex-start","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":64,"section_width":"page-width","section_height":"","section_height_custom":50,"color_scheme":"scheme-1","background_media":"none","video_position":"cover","background_image_position":"cover","border":"none","border_width":1,"border_opacity":100,"border_radius":0,"toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","padding-block-start":96,"padding-block-end":96}},"section_features":{"type":"cc-features-premium","blocks":{"feat_1":{"type":"feature","settings":{"icon":"\ud83c\udfa8","title":"100% cr\u00e9atif","text":"Des mat\u00e9riaux de qualit\u00e9 professionnelle pour lib\u00e9rer l\u2019imagination de ton enfant.","tag":"Sans \u00e9cran"}},"feat_2":{"type":"feature","settings":{"icon":"\ud83e\udde0","title":"Stimule le cerveau","text":"Construire, assembler, cr\u00e9er \u2014 des activit\u00e9s qui d\u00e9veloppent la motricit\u00e9 et la concentration.","tag":"Certifi\u00e9 p\u00e9dagogique"}},"feat_3":{"type":"feature","settings":{"icon":"\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67","title":"En famille","text":"Des moments de qualit\u00e9 partag\u00e9s. Des souvenirs qui durent. Une vraie exp\u00e9rience ensemble.","tag":"D\u00e8s 6 ans"}},"feat_4":{"type":"feature","settings":{"icon":"\u267b\ufe0f","title":"\u00c9co-responsable","text":"Mat\u00e9riaux durables, emballages recyclables. Bon pour tes enfants, bon pour la plan\u00e8te.","tag":"100% recyclable"}},"feat_5":{"type":"feature","settings":{"icon":"\ud83c\udf81","title":"Cadeau parfait","text":"Livraison en 48h, emballage cadeau offert. Le pr\u00e9sent qui fait la diff\u00e9rence.","tag":"Livraison rapide"}},"feat_6":{"type":"feature","settings":{"icon":"\ud83c\udfc6","title":"Garanti 30 jours","text":"Pas convaincu\u00a0? On vous rembourse int\u00e9gralement. Sans question, sans d\u00e9lai.","tag":"Satisfait ou rembours\u00e9"}}},"block_order":["feat_1","feat_2","feat_3","feat_4","feat_5","feat_6"],"name":"Fonctionnalit\u00e9s","settings":{"color_scheme":"scheme-2","eyebrow":"Pourquoi CubeCraft","title":"Tout ce dont ton enfant a besoin pour cr\u00e9er","subtitle":"Un kit pens\u00e9 pour stimuler la cr\u00e9ativit\u00e9, d\u00e9velopper la concentration et s\u2019\u00e9loigner des \u00e9crans."}},"section_proof":{"type":"hero","blocks":{"text_eyebrow2":{"type":"text","name":"Eyebrow","settings":{"text":"<p>CE QUE DISENT LES PARENTS</p>","width":"fit-content","max_width":"normal","alignment":"center","type_preset":"rte","font":"var(--font-body--family)","font_size":"0.75rem","line_height":"normal","letter_spacing":"0.12em","case":"uppercase","wrap":"pretty","color":"#22C55E","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"text_title2":{"type":"text","name":"Titre","settings":{"text":"<h2>2\u00a0847 parents ont d\u00e9j\u00e0 choisi CubeCraft</h2>","width":"100%","max_width":"normal","alignment":"center","type_preset":"rte","font":"var(--cc-font-premium, var(--font-primary--family))","font_size":"1rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","color":"#FFFFFF","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":12,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"text_review1":{"type":"text","name":"Avis 1","settings":{"text":"<blockquote><p>\u2b50\u2b50\u2b50\u2b50\u2b50 \u00ab Mon fils de 9 ans a compl\u00e8tement oubli\u00e9 sa tablette. Il passe maintenant ses apr\u00e8s-midi \u00e0 construire des trucs incroyables. \u00bb \u2014 <strong>Marie, maman de Lucas</strong></p></blockquote>","width":"fill","max_width":"normal","alignment":"center","type_preset":"rte","font":"var(--font-body--family)","font_size":"1rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","color":"rgba(255,255,255,0.8)","background":true,"background_color":"rgba(255,255,255,0.07)","corner_radius":16,"padding-block-start":24,"padding-block-end":24,"padding-inline-start":32,"padding-inline-end":32},"blocks":{}},"text_review2":{"type":"text","name":"Avis 2","settings":{"text":"<blockquote><p>\u2b50\u2b50\u2b50\u2b50\u2b50 \u00ab Un cadeau fantastique pour No\u00ebl. Ma fille a pass\u00e9 toutes les vacances \u00e0 cr\u00e9er. Elle voulait m\u00eame le montrer \u00e0 ses copines. \u00bb \u2014 <strong>Thomas, papa de Chlo\u00e9</strong></p></blockquote>","width":"fill","max_width":"normal","alignment":"center","type_preset":"rte","font":"var(--font-body--family)","font_size":"1rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","color":"rgba(255,255,255,0.8)","background":true,"background_color":"rgba(255,255,255,0.07)","corner_radius":16,"padding-block-start":24,"padding-block-end":24,"padding-inline-start":32,"padding-inline-end":32},"blocks":{}},"btn_shop":{"type":"button","name":"Bouton shop","settings":{"label":"Voir tous les avis \u2192","link":"shopify:\/\/collections\/all","open_in_new_tab":false,"style_class":"button-secondary","width":"fit-content","custom_width":100,"width_mobile":"fit-content","custom_width_mobile":100},"blocks":{}}},"block_order":["text_eyebrow2","text_title2","text_review1","text_review2","btn_shop"],"name":"Preuve sociale","settings":{"media_type_1":"image","image_1":"shopify:\/\/shop_images\/Whisk_0f4a6b8fbd226afac61447d6f17914c5dr.png","media_type_2":"image","stack_media_on_mobile":false,"custom_mobile_media":false,"media_type_1_mobile":"image","media_type_2_mobile":"image","link":"","open_in_new_tab":false,"content_direction":"column","vertical_on_mobile":true,"horizontal_alignment":"center","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"center","vertical_alignment_flex_direction_column":"center","gap":32,"section_width":"full-width","section_height":"medium","section_height_custom":50,"color_scheme":"scheme-4","toggle_overlay":true,"overlay_color":"rgba(10,10,10,0.75)","overlay_style":"solid","gradient_direction":"to bottom","blurred_reflection":false,"reflection_opacity":75,"padding-block-start":96,"padding-block-end":96}},"section_guarantee":{"type":"section","blocks":{"group_guarantee":{"type":"group","settings":{"content_direction":"column","vertical_on_mobile":true,"horizontal_alignment":"center","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"center","vertical_alignment_flex_direction_column":"center","gap":24,"width":"fill","custom_width":100,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","custom_height":100,"inherit_color_scheme":true,"color_scheme":"","background_media":"none","video_position":"cover","background_image_position":"cover","border":"solid","border_width":2,"border_opacity":100,"border_radius":20,"toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","link":"","open_in_new_tab":false,"placeholder":"","padding-block-start":48,"padding-block-end":48,"padding-inline-start":48,"padding-inline-end":48},"blocks":{"g_eyebrow":{"type":"text","name":"Eyebrow","settings":{"text":"<p>NOTRE PROMESSE</p>","width":"fit-content","max_width":"normal","alignment":"center","type_preset":"rte","font":"var(--font-body--family)","font_size":"0.75rem","line_height":"normal","letter_spacing":"0.12em","case":"uppercase","wrap":"pretty","color":"#22C55E","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"g_title":{"type":"text","name":"Titre","settings":{"text":"<h2>Garantie \u00ab\u00a0Cr\u00e9ativit\u00e9 ou Rembours\u00e9\u00a0\u00bb</h2>","width":"100%","max_width":"normal","alignment":"center","type_preset":"rte","font":"var(--cc-font-premium, var(--font-primary--family))","font_size":"1rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","color":"var(--color-foreground-heading)","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":12,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"g_text":{"type":"text","name":"Texte","settings":{"text":"<p>Votre enfant n\u2019est pas fan\u00a0? On vous rembourse int\u00e9gralement dans les <strong>30 jours</strong>, sans poser de question. C\u2019est \u00e7a, notre garantie Cr\u00e9ativit\u00e9 ou Rembours\u00e9.</p>","width":"100%","max_width":"600px","alignment":"center","type_preset":"rte","font":"var(--font-body--family)","font_size":"1.0625rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","color":"var(--color-foreground)","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"g_cta":{"type":"button","name":"CTA","settings":{"label":"Je commande sans risque \u2192","link":"shopify:\/\/collections\/all","open_in_new_tab":false,"style_class":"button","width":"fit-content","custom_width":100,"width_mobile":"fit-content","custom_width_mobile":100},"blocks":{}}},"block_order":["g_eyebrow","g_title","g_text","g_cta"]}},"block_order":["group_guarantee"],"name":"Garantie","settings":{"content_direction":"column","vertical_on_mobile":true,"horizontal_alignment":"center","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"center","vertical_alignment_flex_direction_column":"center","gap":0,"section_width":"page-width","section_height":"","section_height_custom":50,"color_scheme":"scheme-3","background_media":"none","video_position":"cover","background_image_position":"cover","border":"none","border_width":1,"border_opacity":100,"border_radius":0,"toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","padding-block-start":96,"padding-block-end":96}},"section_cta":{"type":"cc-cta-premium","blocks":{},"block_order":[],"name":"CTA Final","settings":{"eyebrow":"Derni\u00e8re chance","title":"<p>Votre enfant m\u00e9rite<br>mieux que les <span class=\"green\">écrans.<\/span><\/p>","subtitle":"Rejoignez 2\u00a0847 familles qui ont choisi CubeCraft. Offre de lancement \u00e0 -30% pendant encore quelques heures.","stock_text":"127 familles peuvent encore profiter de l\u2019offre de lancement","cta_text":"Je commande maintenant \u2192","cta_url":"shopify:\/\/collections\/all","guarantee_text":"Garantie 30 jours satisfait ou rembours\u00e9 \u00b7 Livraison 48h offerte"}}},"order":["hero_jVaWmY","section_stats","section_problem","section_features","section_proof","section_guarantee","section_cta"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_jVaWmY": {
+      "type": "hero",
+      "blocks": {
+        "text_D3VWmx": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_YLPk4p": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_H9gpTf": {
+          "type": "button",
+          "name": "t:names.button",
+          "disabled": true,
+          "settings": {
+            "label": "Shop all",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button-secondary",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_D3VWmx",
+        "text_YLPk4p",
+        "button_H9gpTf"
+      ],
+      "name": "t:names.hero",
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/Whisk_92202c68c92e25abbe649526b03243acdr_f26920d4-4444-4392-b1c4-78dff3edc6f0.png",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": true,
+        "media_type_1_mobile": "image",
+        "image_1_mobile": "shopify://shop_images/Whisk_4416eb927c0020d8a5046ad544d19c74dr.png",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "flex-end",
+        "align_baseline": true,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 24,
+        "section_width": "full-width",
+        "section_height": "medium",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-6",
+        "toggle_overlay": true,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 100,
+        "padding-block-end": 72
+      }
+    },
+    "section_D8Q9jG": {
+      "type": "section",
+      "blocks": {
+        "text_cEEEMM": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>3 COLORIS DISPONIBLES</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_ynXqgh": {
+          "type": "text",
+          "name": "t:names.heading",
+          "disabled": true,
+          "settings": {
+            "text": "<h2>Choisissez votre style</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_BKqTcT": {
+          "type": "button",
+          "name": "t:names.button",
+          "disabled": true,
+          "settings": {
+            "label": "Acheter maintenant",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_cEEEMM",
+        "text_ynXqgh",
+        "button_BKqTcT"
+      ],
+      "disabled": true,
+      "name": "t:names.rich_text_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 25,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-5",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "hero_QB96LA": {
+      "type": "hero",
+      "blocks": {
+        "spacer_49kxC9": {
+          "type": "spacer",
+          "settings": {
+            "size": "pixel",
+            "percent_size": 100,
+            "pixel_size": 24,
+            "custom_mobile_size": false,
+            "size_mobile": "percent",
+            "percent_size_mobile": 100,
+            "pixel_size_mobile": 120
+          },
+          "blocks": {}
+        },
+        "marquee_xXw8Yx": {
+          "type": "_marquee",
+          "settings": {
+            "movement_direction": "normal",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "transparent_background": true,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "gap_between_elements": 24
+          },
+          "blocks": {
+            "text_BWDURF": {
+              "type": "text",
+              "disabled": true,
+              "settings": {
+                "text": "<p>Découvrez nos derniers produits.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h1",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_BWDURF"
+          ]
+        },
+        "button_LDxfNc": {
+          "type": "button",
+          "settings": {
+            "label": "Acheter maintenant",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "spacer_49kxC9",
+        "marquee_xXw8Yx",
+        "button_LDxfNc"
+      ],
+      "disabled": true,
+      "name": "t:names.hero_marquee",
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/Whisk_0f4a6b8fbd226afac61447d6f17914c5dr.png",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "space-between",
+        "gap": 13,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-5",
+        "toggle_overlay": true,
+        "overlay_color": "#00000026",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 0,
+        "padding-block-end": 4
+      }
+    },
+    "section_KYwBtw": {
+      "type": "section",
+      "blocks": {
+        "image_6yyzny": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Whisk_4f8df5f9260d81496f0406e53e7c984adr.png",
+            "link": "",
+            "image_ratio": "square",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_8DVN8m": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 19,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_jLcRcx": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<p>Votre enfant passe combien d'heures par jour sur un écran ?</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_HQENbB": {
+              "type": "button",
+              "settings": {
+                "label": "Acheter maintenant",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_jLcRcx",
+            "button_HQENbB"
+          ]
+        }
+      },
+      "block_order": [
+        "image_6yyzny",
+        "group_8DVN8m"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    }
+  },
+  "order": [
+    "hero_jVaWmY",
+    "section_D8Q9jG",
+    "hero_QB96LA",
+    "section_KYwBtw"
+  ]
+}
